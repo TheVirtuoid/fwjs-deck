@@ -1,0 +1,29 @@
+{
+  "name": "@virtuoid/deck",
+  "version": "1.0.0",
+  "description": "Fun With JavaScript: Deck class",
+  "main": "dist/Deck.js",
+  "scripts": {
+    "test": "cypress run",
+    "cypress:open": "cypress open",
+    "build": "node builder.js && npm pack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheVirtuoid/fwjs-deck.git"
+  },
+  "keywords": [
+    "deck",
+    "card",
+    "javascript"
+  ],
+  "author": "TheVirtuoid <thevirtuoid@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheVirtuoid/fwjs-deck/issues"
+  },
+  "homepage": "https://github.com/TheVirtuoid/fwjs-deck#readme",
+  "devDependencies": {
+    "@virtuoid/card": "^1.0.0"
+  }
+}

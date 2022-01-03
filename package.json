@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/TheVirtuoid/fwjs-deck#readme",
   "devDependencies": {
-    "@virtuoid/card": "^1.0.0"
+    "@cypress/webpack-preprocessor": "^5.11.0",
+    "@virtuoid/card": "^1.0.3",
+    "cypress": "^8.5.0"
   }
 }

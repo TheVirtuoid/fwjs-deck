@@ -3,22 +3,24 @@
 
 class Deck {
 	- Array<Card> cards
-	- Card card
 	-- Getters --
 	+Array<Card> cards()
 	+Number count
 	-- Methods --
 	+ctor(Card)
+	+ctor(Array<Card>)
+	+ctor()
 	+add(Card)
 	+Card remove(Card)
 	+Card remove()
 	+Card remove(index)
 	+shuffle()
 	+deal(Deck deck)
-	+sort()
 	+getSuit(String suit)
 	+getRank(String rank)
 	+getValue(Any value)
+	-- Interface Methods --
+	+sort()
 }
 
 

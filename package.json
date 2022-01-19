@@ -6,7 +6,7 @@
   "scripts": {
     "test": "cypress run",
     "cypress:open": "cypress open",
-    "build": "node builder.js && npm pack"
+    "build": "npx rollup --config"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,9 @@
   "homepage": "https://github.com/TheVirtuoid/fwjs-deck#readme",
   "devDependencies": {
     "@cypress/webpack-preprocessor": "^5.11.0",
-    "@virtuoid/card": "^1.0.3",
-    "cypress": "^8.5.0"
+    "@virtuoid/cards": "^1.0.3",
+    "cypress": "^8.5.0",
+    "rollup": "^2.64.0",
+    "rollup-plugin-terser": "^7.0.2"
   }
 }

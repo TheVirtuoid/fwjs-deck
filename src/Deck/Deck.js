@@ -1,6 +1,6 @@
-import { Card } from '@virtuoid/card';
+import { Card } from '@virtuoid/cards';
 
-export default class Deck {
+export class Deck {
 	#cards;
 
 	get cards() {

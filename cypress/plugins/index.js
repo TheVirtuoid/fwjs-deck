@@ -22,10 +22,18 @@ module.exports = (on, config) => {
   // `config` is the resolved Cypress config
 }
 */
+const webpackPreprocessor = require('@cypress/webpack-preprocessor');
+const webpackOptions= webpackPreprocessor.defaultOptions;
 
+/*
+let { presets } = webpackOptions.webpackOptions.module.rules[0].use[0].options;
+presets = [presets];
+presets.push({ targets: { esmodules: true } });
+webpackOptions.webpackOptions.module.rules[0].use[0].options.presets = presets;
 
-const webpackPreprocessor = require('@cypress/webpack-preprocessor')
+webpackOptions.webpackOptions.module.rules[0].use = [];
+*/
 
 module.exports = (on) => {
-	on('file:preprocessor', webpackPreprocessor(undefined));
+	on('file:preprocessor', webpackPreprocessor(webpackOptions));
 }

@@ -23,9 +23,11 @@
     "url": "https://github.com/TheVirtuoid/fwjs-deck/issues"
   },
   "homepage": "https://github.com/TheVirtuoid/fwjs-deck#readme",
+  "dependencies": {
+    "@virtuoid/cards": "^1.0.3"
+  },
   "devDependencies": {
     "@cypress/webpack-preprocessor": "^5.11.0",
-    "@virtuoid/cards": "^1.0.3",
     "cypress": "^8.5.0",
     "rollup": "^2.64.0",
     "rollup-plugin-terser": "^7.0.2"

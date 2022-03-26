@@ -95,7 +95,7 @@ export class Deck {
 
 	// sorting is left up to the classes that extend this class
 	sort() {
-		return;
+		return undefined;
 	}
 
 }

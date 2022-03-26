@@ -22,6 +22,28 @@ const clone = (deck) => {
 	}));
 }
 
+class CardWithCompare extends Card {
+	constructor(args) {
+		super(args);
+	}
+	compare(card) {
+		return this.value === card.value - 1;
+	}
+}
+
+const tenCompareCards = [];
+tenCompareCards.push(new CardWithCompare({ suit: 'a', rank: 'a', value: 1 }));
+tenCompareCards.push(new CardWithCompare({ suit: 'a', rank: 'b', value: 2 }));
+tenCompareCards.push(new CardWithCompare({ suit: 'a', rank: 'c', value: 3 }));
+tenCompareCards.push(new CardWithCompare({ suit: 'b', rank: 'a', value: 1 }));
+tenCompareCards.push(new CardWithCompare({ suit: 'b', rank: 'b', value: 2 }));
+tenCompareCards.push(new CardWithCompare({ suit: 'b', rank: 'c', value: 3 }));
+tenCompareCards.push(new CardWithCompare({ suit: 'c', rank: 'a', value: 1 }));
+tenCompareCards.push(new CardWithCompare({ suit: 'c', rank: 'b', value: 2 }));
+tenCompareCards.push(new CardWithCompare({ suit: 'c', rank: 'c', value: 3 }));
+tenCompareCards.push(new CardWithCompare({ suit: 'j' }));
+
+
 describe('Deck creation', () => {
 	it('should create an empty deck', () => {
 		const deck = new Deck();
@@ -75,6 +97,11 @@ describe('Deck Retrieval/Comparisons', () => {
 		const deck = new Deck(clone(tenCards));
 		const suits = deck.getValue(0);
 		expect(suits.length).to.equal(0);
+	});
+	it('should return collection of comparisons when using the compare method', () => {
+		const deck = new Deck(tenCompareCards);
+		const card = new CardWithCompare({ suit: 'a', rank: 'b', value: 4 });
+		expect(deck.getComparison(card).length).to.equal(3);
 	});
 });
 
@@ -152,7 +179,8 @@ describe('Deck shuffle/sort/deal', () => {
 		const deck = new Deck(clone(tenCards));
 		const card = deck.remove();
 		deck.add(card);
-		deck.sort();
+		const result = deck.sort();
+		expect(result).to.be.undefined;
 		expect(deck.cards[0].rank).to.equal('b');
 		expect(deck.cards[9].rank).to.equal('a');
 	});

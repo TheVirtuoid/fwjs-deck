@@ -2,7 +2,7 @@
   "name": "@virtuoid/deck",
   "version": "1.0.0",
   "description": "Fun With JavaScript: Deck class",
-  "main": "dist/Deck.js",
+  "main": "dist/Decks.min.js",
   "scripts": {
     "test": "cypress run",
     "cypress:open": "cypress open",

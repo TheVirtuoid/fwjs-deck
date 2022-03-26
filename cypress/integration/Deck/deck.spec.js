@@ -1,5 +1,6 @@
-import Deck from './../../../src/Deck';
-import { Card } from '@virtuoid/card';
+import { Deck } from './../../../src/Deck/Deck.js';
+
+import { Card } from "@virtuoid/cards";
 
 const tenCards = [];
 tenCards.push(new Card({ suit: 'a', rank: 'a', value: 1 }));

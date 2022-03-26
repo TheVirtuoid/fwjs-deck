@@ -1,6 +1,6 @@
-import { Card } from '@virtuoid/card';
+import { Card } from '@virtuoid/cards';
 
-export default class Deck {
+export class Deck {
 	#cards;
 
 	get cards() {
@@ -95,7 +95,7 @@ export default class Deck {
 
 	// sorting is left up to the classes that extend this class
 	sort() {
-		return;
+		return undefined;
 	}
 
 }

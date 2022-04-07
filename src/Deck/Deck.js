@@ -101,24 +101,32 @@ export class Deck {
 			return this.#cards.shift();
 		}
 		if (!isNaN(card)) {
-			if (card <= 0 || card >= this.count) {
-				return;
-			}
-			const removedCard = this.#cards.splice(card, 1);
-			if (removedCard.length) {
-				return removedCard[0];
-			} else {
-				return;
-			}
+			return this.#removeCardViaIndexNumber(card);
 		}
 		if (!(card instanceof Card)) {
 			return;
 		}
+		return this.#removeSpecificCard(card);
+	}
+
+	#removeCardViaIndexNumber(number) {
+		if (number < 0 || number >= this.count) {
+			return;
+		}
+		const removedCard = this.#cards.splice(number, 1);
+		if (removedCard.length) {
+			return removedCard[0];
+		} else {
+			return;
+		}
+	}
+
+	#removeSpecificCard(card) {
 		const foundCard = this.#cards.findIndex((currentCard) => currentCard.is(card));
 		if (foundCard === -1) {
 			return;
 		}
-		this.remove(foundCard);
+		return this.#removeCardViaIndexNumber(foundCard);
 	}
 
 	/**

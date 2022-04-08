@@ -4,7 +4,7 @@ This repository is for the 'Dwck' classes used in the Fun with JavaScript series
 
 ## Versions
 
-1.0.1 : Initial Version
+1.0.2 : Initial Version
 
 ## Installation
 

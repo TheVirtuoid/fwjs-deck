@@ -106,3 +106,5 @@ dist
 #Jetbrains
 
 .idea
+/cypress/screenshots/
+/cypress/videos/

@@ -1,6 +1,6 @@
 # Fun With JavaScript - 'Deck' classes
 
-This repository is for the 'Dwck' classes used in the Fun with JavaScript series.
+This repository is for the 'Deck' classes used in the Fun with JavaScript series.
 
 ## Versions
 
@@ -15,6 +15,8 @@ npm install --save @virtuoid/decks
 ## Dependencies
 
 ```@virtuoid/cards``` for the base Card class. 
+
+```uuid``` for unique IDs. 
 
 All cards within this deck must have as its base the Card class.
 

@@ -54,7 +54,7 @@ const deck = new Deck([
 | remove(Card card)           | Card        | Removes the card specified in the argument. Returns ```undefined``` if the card cannot be found.                                                |
 | shuffle()                   | undefined   | Shuffles the cards                                                                                                                              |
 | deal(Deck deck)             | undefined   | Deals a single card from the current deck to the deck in the argument. The card dealt is the top-most card in the collection (index = 0)        |
-| sort()                      | undefined   | Sorts the deck. This method is an abstract method to be defined by extending classes                                                            |
+
 ## Classes
 
 As time goes on, more 'Card' classes will be added to this repository. These directions will be updated as they are added.

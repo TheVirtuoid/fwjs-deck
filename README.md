@@ -50,6 +50,7 @@ const deck = new Deck([
 | getRank(Card.rank)          | Array<Card> | Returns collection of all cards that match the given rank, or empty collection.                                                                 |
 | getValue(Card.value)        | Array<Card> | Returns collection of all cards that match the given value, or empty collection.                                                                |
 | getComparison(Card card)    | Array<Card> | Returns collection of all cards that match the given card, using the card's ```compare()``` method                                              |
+| findCard(Card card)         | number      | Returns index of card in deck, otherwise -1                                                                                                     |
 | add(Card card)              | undefined   | Adds a card to the deck. The card is placed as the last card in the deck                                                                        |
 | remove()                    | Card        | Removes the top card from the deck. Returns ```undefined``` if no cards are in the deck.                                                        |
 | remove(number cardPosition) | Card        | Removes a card from the deck based upon the position of the card given in the argument. Returns ```undefined``` if the card position is invalid |

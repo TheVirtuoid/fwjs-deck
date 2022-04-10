@@ -38,10 +38,10 @@ const deck = new Deck([
 ]);
 ```
 #### Properties
-| Name  | R/W | Type        | Description                                          |
-|-------| --- |-------------|------------------------------------------------------|
-| cards | RO | Array<Card>  | The collection of cardsThe assigned rank of the card |
-| count | RO | number       | The number of cards within the collection            |
+| Name      | R/W | Type   | Description                               |
+|-----------|-----|--------|-------------------------------------------|
+| id        | RO  | string | The ID for this deck                      |
+| cardCount | RO  | number | The number of cards within the collection |
 
 #### Methods
 | Name                        | Returns     | Description                                                                                                                                     |
@@ -59,7 +59,7 @@ const deck = new Deck([
 
 ## Classes
 
-As time goes on, more 'Card' classes will be added to this repository. These directions will be updated as they are added.
+As time goes on, more 'Deck' classes will be added to this repository. These directions will be updated as they are added.
 
 ## Github
 

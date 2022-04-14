@@ -4,8 +4,8 @@
 // deck.findCard(card, { compare: true });
 
 import { CardWithCompare, deckCards, deckCardsWithCompare } from "../../../fixtures/cards";
-import Deck from "../../../../src/Deck/Deck";
-import { Card } from "@virtuoid/cards";
+import Deck from "../../../../src/Deck";
+import Card from "@virtuoid/cards";
 
 const cardToTest = new Card({
 	suit: 's1',

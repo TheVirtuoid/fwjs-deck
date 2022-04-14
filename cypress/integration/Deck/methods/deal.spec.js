@@ -1,6 +1,6 @@
 import { deckCards } from "../../../fixtures/cards";
-import Deck from "../../../../src/Deck/Deck";
-import { Card } from "@virtuoid/cards";
+import Deck from "../../../../src/Deck";
+import Card from "@virtuoid/cards";
 
 const cardToTest = new Card({
 	suit: 's1',

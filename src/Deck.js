@@ -1,5 +1,5 @@
 import { v4 as uuidV4 } from 'uuid';
-import { Card } from "@virtuoid/cards";
+import Card from "@virtuoid/cards";
 
 export default class Deck {
 	#id;

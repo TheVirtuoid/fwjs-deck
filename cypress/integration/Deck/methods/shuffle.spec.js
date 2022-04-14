@@ -1,5 +1,5 @@
 import { cloneDeckCards, deckCards } from "../../../fixtures/cards";
-import Deck from "../../../../src/Deck/Deck";
+import Deck from "../../../../src/Deck";
 
 const deckShuffleCards = cloneDeckCards();
 

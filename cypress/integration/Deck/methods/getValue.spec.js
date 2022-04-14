@@ -1,5 +1,5 @@
 import { deckCards } from "../../../fixtures/cards";
-import Deck from "../../../../src/Deck/Deck";
+import Deck from "../../../../src/Deck";
 
 describe('getValue', () => {
 	it('should return a deck of cards based upon the value', () => {

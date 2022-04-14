@@ -1,5 +1,5 @@
 import { CardWithCompare, deckCards, deckCardsWithCompare } from "../../../fixtures/cards";
-import Deck from "../../../../src/Deck/Deck";
+import Deck from "../../../../src/Deck";
 
 const cardToCompare = new CardWithCompare({
 	value: 1

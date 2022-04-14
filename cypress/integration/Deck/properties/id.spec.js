@@ -1,4 +1,4 @@
-import Deck from "../../../../src/Deck/Deck";
+import Deck from "../../../../src/Deck";
 
 describe('id', () => {
 	it('should NOT change the id', () => {

@@ -1,5 +1,5 @@
-import Deck from "../../../../src/Deck/Deck";
-import { Card } from "@virtuoid/cards";
+import Deck from "../../../../src/Deck";
+import Card from "@virtuoid/cards";
 
 describe('add', () => {
 	it('should add a card to a deck', () => {

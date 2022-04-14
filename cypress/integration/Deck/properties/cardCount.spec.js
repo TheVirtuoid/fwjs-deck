@@ -1,4 +1,4 @@
-import Deck from "../../../../src/Deck/Deck";
+import Deck from "../../../../src/Deck";
 
 describe('cardCount', () => {
 	it('should NOT change the cardCount', () => {

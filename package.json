@@ -2,11 +2,10 @@
   "name": "@virtuoid/decks",
   "version": "1.0.2",
   "description": "Fun With JavaScript: Deck class",
-  "main": "dist/Decks.min.js",
+  "main": "dist/Deck.min.js",
   "scripts": {
     "test": "cypress run",
-    "cypress:open": "cypress open",
-    "build": "npx rollup --config"
+    "cypress:open": "cypress open"
   },
   "repository": {
     "type": "git",

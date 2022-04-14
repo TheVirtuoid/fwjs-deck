@@ -1,8 +1,8 @@
 
 // new Deck({ id: string, cards: Array<string> });
 
-import Deck from "../../../src/Deck/Deck";
-import { Card } from "@virtuoid/cards";
+import Deck from "../../../src/Deck";
+import Card from "@virtuoid/cards";
 
 describe('constructor', () => {
 	it('should create a deck class', () => {

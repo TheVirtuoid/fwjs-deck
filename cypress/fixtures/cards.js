@@ -1,4 +1,4 @@
-import {Card} from "@virtuoid/cards";
+import Card from "@virtuoid/cards";
 
 const deckCards = [
 	new Card({ suit: 's1', rank: 'r1', value: 1 }),

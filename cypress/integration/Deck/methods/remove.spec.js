@@ -13,8 +13,8 @@ import {
 	deckCards,
 	deckCardsWithCompare
 } from "../../../fixtures/cards";
-import { Card } from "@virtuoid/cards";
-import Deck from "../../../../src/Deck/Deck";
+import Card from "@virtuoid/cards";
+import Deck from "../../../../src/Deck";
 
 const cardToTest = new Card({
 	suit: 's1',

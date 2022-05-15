@@ -173,6 +173,17 @@ export default class Deck {
 	}
 
 	/**
+	 * Sorts the deck
+	 * @param {function} sortFunction
+	 */
+	sort(sortFunction) {
+		if (typeof(sortFunction) !== 'function') {
+			return;
+		}
+		this.#cards.sort(sortFunction);
+	}
+
+	/**
 	 * Removes a card from the top of the deck
 	 * @returns {Card | null} Returns null if card cannot be found;
 	 */

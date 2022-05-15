@@ -56,6 +56,7 @@ const deck = new Deck([
 | remove(number cardPosition) | Card      | Removes a card from the deck based upon the position of the card given in the argument. Returns ```undefined``` if the card position is invalid |
 | remove(Card card)           | Card      | Removes the card specified in the argument. Returns ```undefined``` if the card cannot be found.                                                |
 | shuffle()                   | undefined | Shuffles the cards                                                                                                                              |
+| sort(function sortFunction) | undefined | Sorts the cards. Uses same arguments as Array.sort() |
 | deal(Deck deck)             | undefined | Deals a single card from the current deck to the deck in the argument. The card dealt is the top-most card in the collection (index = 0)        |
 
 ## Github

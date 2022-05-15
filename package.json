@@ -1,6 +1,6 @@
 {
   "name": "@virtuoid/decks",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Fun With JavaScript: Deck class",
   "main": "dist/Deck.min.js",
   "scripts": {

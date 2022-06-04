@@ -47,16 +47,16 @@ export default class Deck {
 
 	/**
 	 * Deal a card from the deck
-	 * @param {Deck} deck
+	 * @param {Deck} toDeck
 	 * @throws {TypeError} Throws when argument is not a Deck
 	 *
 	 * The card is dealt from the top of the deck and added to the deck in the argument
 	 */
-	deal(deck) {
-		this.#validateDeck(deck);
+	deal(toDeck) {
+		this.#validateDeck(toDeck);
 		const removedCard = this.remove();
 		if (removedCard) {
-			deck.add(removedCard);
+			toDeck.add(removedCard);
 		}
 	}
 
@@ -155,6 +155,14 @@ export default class Deck {
 				return card.is(deckCard);
 			}
 		});
+	}
+
+	/**
+	 * Get the cards in the deck, return a cloned copy of them
+	 * @returns {*[]}
+	 */
+	getCards() {
+		return this.#cards.map((card) => card.clone());
 	}
 
 	/**
